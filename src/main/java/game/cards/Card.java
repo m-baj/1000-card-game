@@ -1,18 +1,18 @@
-package game;
+package game.cards;
 
 public class Card {
-    private final CardSuit color;
+    private final CardSuit suit;
     private final CardRank rank;
     private final int value;
 
-    public Card(CardSuit color, CardRank rank, int value) {
-        this.color = color;
+    public Card(CardSuit suit, CardRank rank, int value) {
+        this.suit = suit;
         this.rank = rank;
         this.value = value;
     }
 
-    public CardSuit getColor() {
-        return color;
+    public CardSuit getSuit() {
+        return suit;
     }
     public CardRank getRank() {
         return rank;
@@ -23,6 +23,6 @@ public class Card {
 
     @Override
     public String toString() {
-        return "Color: " + color + ", Rank: " + rank + ", Value: " + value;
+        return "Color: " + suit + ", Rank: " + rank + ", Value: " + value;
     }
 }
