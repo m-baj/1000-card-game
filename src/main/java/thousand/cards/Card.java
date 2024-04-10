@@ -1,4 +1,4 @@
-package game.cards;
+package thousand.cards;
 
 public class Card {
     private final CardSuit suit;
@@ -23,6 +23,6 @@ public class Card {
 
     @Override
     public String toString() {
-        return "Color: " + suit + ", Rank: " + rank + ", Value: " + value;
+        return STR."Suit: \{suit}, Rank: \{rank}, Value: \{value}";
     }
 }

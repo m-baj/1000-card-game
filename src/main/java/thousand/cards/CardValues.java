@@ -1,4 +1,4 @@
-package game.cards;
+package thousand.cards;
 
 import java.util.HashMap;
 import java.util.Map;

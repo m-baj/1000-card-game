@@ -1,4 +1,4 @@
-package game.cards;
+package thousand.cards;
 
 import java.util.ArrayList;
 
@@ -22,7 +22,7 @@ public class Deck {
                 return card;
             }
         }
-        throw new CardNotFoundException("Card: " + rank + ", " + suit + " not found");
+        throw new CardNotFoundException(STR."Card: \{rank}, \{suit} not found");
     }
 
     public Card removeCard(CardSuit suit, CardRank rank) throws CardNotFoundException {
