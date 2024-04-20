@@ -1,10 +1,11 @@
 package thousand.cards;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 
 public class Deck {
-    private ArrayList<Card> cards;
+    private final ArrayList<Card> cards;
     public Deck() {
         cards = new ArrayList<>();
         for (CardSuit suit : CardSuit.values()) {
@@ -31,4 +32,14 @@ public class Deck {
         return card;
     }
 
+    public Card popFirstCard() {
+        Card card = cards.getFirst();
+        cards.remove(card);
+        return card;
+    }
+
+    public void shuffle() {
+        Collections.shuffle(cards);
+    }
+    public boolean isEmpty() { return cards.isEmpty(); }
 }
