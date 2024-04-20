@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 public class Musik implements CardRecipient {
     private final ArrayList<Card> cards;
+
     public Musik() {
         cards = new ArrayList<>();
     }
