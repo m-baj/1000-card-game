@@ -9,8 +9,9 @@ import java.io.IOException;
 public class BackgroundPanel extends JPanel {
     private final Image backgroundImage;
 
-    public BackgroundPanel(String pathToImage) throws IOException {
-        backgroundImage = ImageIO.read(new File(pathToImage));
+    public BackgroundPanel() {
+        String backgroundPath = "/home/mbaj/IdeaProjects/1000-card-game/src/main/resources/backgrounds/9999520.jpg";
+        this.backgroundImage = new ImageIcon(backgroundPath).getImage();
     }
 
     @Override
